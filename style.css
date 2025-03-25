@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    font-family:Verdana, sans-serif;
+    background-color:rgb(218, 231, 240);
+    text-align: center;
+}
+
+.banner {
+    background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djfr1qb-0c1a1ce6-92e7-48fc-8a82-3622c74676a8.jpg/v1/fit/w_736,h_189,q_70,strp/template_background_by_koku_draws_djfr1qb-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTg5IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamZyMXFiLTBjMWExY2U2LTkyZTctNDhmYy04YTgyLTM2MjJjNzQ2NzZhOC5qcGciLCJ3aWR0aCI6Ijw9NzM2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.hhZGUZxBHsISnTQ9Mt7XSfuxkE-m9qkRhU0m3ktW178') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(41, 45, 54, 0.7);
+}
+
+h1 {
+    font-size: 4rem;
+    background: rgba(60, 80, 104, 0.5);
+    padding: 10px 60px;
+    border-radius: 10px;
+}
+
+nav {
+    background: rgb(74, 111, 133);
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+}
+#world-map-section {
+    width: 80%;
+    height: 80%;
+  }
+  
+  .map-container {
+    position: relative;
+    width: 600px;  /* Adjust width to a smaller size */
+    height: 400px; /* Adjust height to a smaller size */
+    margin: 20 auto; /* Center the map in the container */
+  }
+  
+  .world-map {
+    width: 70%;  /* Make the map fit the container size */
+    height: 70%; /* Make the map fit the container size */
+    object-fit: contain; /* Ensure the map scales proportionally without stretching */
+  }
+  
+  .marker {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    border-radius: 50%;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .info-box {
+    display: none;
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-box img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .marker:hover + .info-box {
+    display: block;
+  }
