@@ -9,7 +9,7 @@
 <body>
     <header>
         <div class="banner">
-            <h1>MidozaA</h1>
+            <h1>Midoza</h1>
         </div>
         <nav>
             <ul>
@@ -23,19 +23,145 @@
     
     <main>
         <section id="home" class="content"> <h2>Welcome to Midoza</h2> <p>Explore the wonders of this realm.</p> </section>
+        
         <section id="map" class="content" style="display: none;"> <h2>World Map</h2> <p>Discover the lands.</p> 
-            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djfrs9v-1893431d-da1c-4018-8c7e-02fb37f8b90f.jpg/v1/fit/w_736,h_520,q_70,strp/world_template_by_koku_draws_djfrs9v-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTIwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamZyczl2LTE4OTM0MzFkLWRhMWMtNDAxOC04YzdlLTAyZmIzN2Y4YjkwZi5qcGciLCJ3aWR0aCI6Ijw9NzM2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.NoY-tmTpL4MwrGT6KmBrWEXwdyPxMZ0M-4Erywzd-iE" alt="World Map" class="world-map">
-             <!-- Red dot marker -->
-    <div class="marker" id="marker" style="top: 150px; left: 200px;"> </div>
-    <!-- Info box on hover -->
-    <div class="info-box" id="info-box">
-      <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djfrs9v-1893431d-da1c-4018-8c7e-02fb37f8b90f.jpg/v1/fit/w_736,h_520,q_70,strp/world_template_by_koku_draws_djfrs9v-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTIwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamZyczl2LTE4OTM0MzFkLWRhMWMtNDAxOC04YzdlLTAyZmIzN2Y4YjkwZi5qcGciLCJ3aWR0aCI6Ijw9NzM2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.NoY-tmTpL4MwrGT6KmBrWEXwdyPxMZ0M-4Erywzd-iE" alt="Location" class="location-image">
-      <h3>Location Title</h3>
-      <p>Small sentence about the location.</p>
-    </div>
-  </div>
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djhf2j8-6d7ff645-401f-4b40-9f00-7988aeb430ac.jpg/v1/fit/w_736,h_520,q_70,strp/midoza_map_by_koku_draws_djhf2j8-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTIwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamhmMmo4LTZkN2ZmNjQ1LTQwMWYtNGI0MC05ZjAwLTc5ODhhZWI0MzBhYy5qcGciLCJ3aWR0aCI6Ijw9NzM2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.uqHawof4Y5f-RnmkVsebOSe86OSmkkmv-n4zB1KxgIo" alt="World Map" class="world-map">
+          
+            <div class="marker-container" style="left: 550px; top: -460px;">
+                <div class="marker"></div>
+                <div class="info-box">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djfrs9v-1893431d-da1c-4018-8c7e-02fb37f8b90f.jpg/v1/fit/w_736,h_520,q_70,strp/world_template_by_koku_draws_djfrs9v-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTIwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamZyczl2LTE4OTM0MzFkLWRhMWMtNDAxOC04YzdlLTAyZmIzN2Y4YjkwZi5qcGciLCJ3aWR0aCI6Ijw9NzM2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.NoY-tmTpL4MwrGT6KmBrWEXwdyPxMZ0M-4Erywzd-iE" alt="Location 1" width="100">
+                    <b>Hidden Retreat</b>
+                    <p>After Caelestis had succumb to Moonga, the tribe journeyed here, where it was safer.</p>
+                </div>
+            </div>
+            
+            <div class="marker-container" style="left: 830px; top: -340px;">
+                <div class="marker"></div>
+                <div class="info-box">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djfepbx-3c2e8072-a7e5-4566-b7ff-8e3a485ce552.png/v1/fit/w_462,h_436,q_70,strp/kumo_by_koku_draws_djfepbx-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NDM2IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamZlcGJ4LTNjMmU4MDcyLWE3ZTUtNDU2Ni1iN2ZmLThlM2E0ODVjZTU1Mi5wbmciLCJ3aWR0aCI6Ijw9NDYyIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.YZ8jBrx4-uHlM4Wt0o_LmSAXXWpkE8pCLsbJAF2HcP4" alt="Location 2" width="100">
+                    <b>The First Settlement Ruins</b>
+                    <p>The remnants of where the tribe lived before Caelestis succumbing to Moonga.</p>
+                </div>
+            </div>
+            
+            <div class="marker-container" style="left: 910px; top: -350px;">
+                <div class="marker"></div>
+                <div class="info-box">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djhf2j8-6d7ff645-401f-4b40-9f00-7988aeb430ac.jpg/v1/fit/w_736,h_520,q_70,strp/midoza_map_by_koku_draws_djhf2j8-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTIwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamhmMmo4LTZkN2ZmNjQ1LTQwMWYtNGI0MC05ZjAwLTc5ODhhZWI0MzBhYy5qcGciLCJ3aWR0aCI6Ijw9NzM2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.uqHawof4Y5f-RnmkVsebOSe86OSmkkmv-n4zB1KxgIo" alt="Location 3" width="100">
+                    <b>Caelestis's Shrine</b>
+                    <p>The shrine where Caelestis dwells</p>
+                </div>
+            </div>
+
+            <div class="marker-container" style="left: 690px; top: -360px;">
+                <div class="marker"></div>
+                <div class="info-box">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djhf2j8-6d7ff645-401f-4b40-9f00-7988aeb430ac.jpg/v1/fit/w_736,h_520,q_70,strp/midoza_map_by_koku_draws_djhf2j8-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTIwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamhmMmo4LTZkN2ZmNjQ1LTQwMWYtNGI0MC05ZjAwLTc5ODhhZWI0MzBhYy5qcGciLCJ3aWR0aCI6Ijw9NzM2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.uqHawof4Y5f-RnmkVsebOSe86OSmkkmv-n4zB1KxgIo" alt="Location 4" width="100">
+                    <b>Main Town</b>
+                    <p>Where the tribe relocates after Caelestis has been cured of Moonga.</p>
+                </div>
+            </div>
+
+            <div class="marker-container" style="left: 490px; top: -280px;">
+                <div class="marker"></div>
+                <div class="info-box">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djhf2j8-6d7ff645-401f-4b40-9f00-7988aeb430ac.jpg/v1/fit/w_736,h_520,q_70,strp/midoza_map_by_koku_draws_djhf2j8-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTIwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamhmMmo4LTZkN2ZmNjQ1LTQwMWYtNGI0MC05ZjAwLTc5ODhhZWI0MzBhYy5qcGciLCJ3aWR0aCI6Ijw9NzM2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.uqHawof4Y5f-RnmkVsebOSe86OSmkkmv-n4zB1KxgIo" alt="Location 5" width="100">
+                    <b>Prophesy Shrine</b>
+                    <p>A shrine that prophesies the union of two people who will bring the gale tribe together again.</p>
+                </div>
+            </div>
+
+            <div class="marker-container" style="left: 800px; top: -510px;">
+                <div class="marker"></div>
+                <div class="info-box">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djhf2j8-6d7ff645-401f-4b40-9f00-7988aeb430ac.jpg/v1/fit/w_736,h_520,q_70,strp/midoza_map_by_koku_draws_djhf2j8-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTIwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamhmMmo4LTZkN2ZmNjQ1LTQwMWYtNGI0MC05ZjAwLTc5ODhhZWI0MzBhYy5qcGciLCJ3aWR0aCI6Ijw9NzM2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.uqHawof4Y5f-RnmkVsebOSe86OSmkkmv-n4zB1KxgIo" alt="Location 6" width="100">
+                    <b>Roseate's Garden</b>
+                    <p>A Garden where Roseate grew blue roses with that contained his aura.</p>
+                </div>
+            </div>
+
+            
+            <div class="marker-container" style="left: 785px; top: -290px;">
+                <div class="marker"></div>
+                <div class="info-box">
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djhf2j8-6d7ff645-401f-4b40-9f00-7988aeb430ac.jpg/v1/fit/w_736,h_520,q_70,strp/midoza_map_by_koku_draws_djhf2j8-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTIwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamhmMmo4LTZkN2ZmNjQ1LTQwMWYtNGI0MC05ZjAwLTc5ODhhZWI0MzBhYy5qcGciLCJ3aWR0aCI6Ijw9NzM2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.uqHawof4Y5f-RnmkVsebOSe86OSmkkmv-n4zB1KxgIo" alt="Location 6" width="100">
+                    <b>Smaller Town</b>
+                    <p>Another town the tribe lives in, however the main family does not live here.</p>
+                </div>
+            </div>
 </section>
-        <section id="creatures" class="content" style="display: none;"> <h2>Creatures & Artifacts</h2> <p>Meet mystical beings and legendary objects.</p> </section>
+        <section id="creatures" class="content" style="display: none;"> 
+            <hr class="divider">
+            <h2>Artifacts</h2>
+            <hr class="divider">
+            <div class="artifact-container">
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djdr4xr-0844ef3f-0725-4191-9024-0d25a8a59449.png/v1/fill/w_140,h_125,q_80,strp/caelestis_by_koku_draws_djdr4xr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI1IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamRyNHhyLTA4NDRlZjNmLTA3MjUtNDE5MS05MDI0LTBkMjVhOGE1OTQ0OS5wbmciLCJ3aWR0aCI6Ijw9MTQwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lot1Nz7EGm6ERVYRZAEhTCtWE1soTcSrRV-Vny8LYYA" alt="Artifact 1">
+                    </div>
+                    <div class="text-box">
+                        <h3>The Blue Rose Sword</h3>
+                        <p>Description for Artifact 1. This is a paragraph that explains the significance and details about the artifact.</p>
+                    </div>
+                </div>
+        
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djdr4xr-0844ef3f-0725-4191-9024-0d25a8a59449.png/v1/fill/w_140,h_125,q_80,strp/caelestis_by_koku_draws_djdr4xr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI1IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamRyNHhyLTA4NDRlZjNmLTA3MjUtNDE5MS05MDI0LTBkMjVhOGE1OTQ0OS5wbmciLCJ3aWR0aCI6Ijw9MTQwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lot1Nz7EGm6ERVYRZAEhTCtWE1soTcSrRV-Vny8LYYA" alt="Artifact 2">
+                    </div>
+                    <div class="text-box">
+                        <h3>One of Roseate's Roses</h3>
+                        <p>Description for Artifact 2. Another interesting artifact with its story.</p>
+                    </div>
+                </div>
+        
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djdr4xr-0844ef3f-0725-4191-9024-0d25a8a59449.png/v1/fill/w_140,h_125,q_80,strp/caelestis_by_koku_draws_djdr4xr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI1IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamRyNHhyLTA4NDRlZjNmLTA3MjUtNDE5MS05MDI0LTBkMjVhOGE1OTQ0OS5wbmciLCJ3aWR0aCI6Ijw9MTQwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lot1Nz7EGm6ERVYRZAEhTCtWE1soTcSrRV-Vny8LYYA" alt="Artifact 3">
+                    </div>
+                    <div class="text-box">
+                        <h3>Ayumi's Necklace</h3>
+                        <p>Description for Artifact 3. Another cool artifact and its significance.</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="divider">
+            <h2>Creatures</h2>
+            <hr class="divider">
+            <div class="creature-container">
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djdr4xr-0844ef3f-0725-4191-9024-0d25a8a59449.png/v1/fill/w_140,h_125,q_80,strp/caelestis_by_koku_draws_djdr4xr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI1IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamRyNHhyLTA4NDRlZjNmLTA3MjUtNDE5MS05MDI0LTBkMjVhOGE1OTQ0OS5wbmciLCJ3aWR0aCI6Ijw9MTQwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lot1Nz7EGm6ERVYRZAEhTCtWE1soTcSrRV-Vny8LYYA" alt="Creature 1">
+                    </div>
+                    <div class="text-box">
+                        <h3>Caelestis</h3>
+                        <p>Description for Creature 1. This is a paragraph that explains the creature's nature, powers, or backstory.</p>
+                    </div>
+                </div>
+        
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djdr4xr-0844ef3f-0725-4191-9024-0d25a8a59449.png/v1/fill/w_140,h_125,q_80,strp/caelestis_by_koku_draws_djdr4xr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI1IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamRyNHhyLTA4NDRlZjNmLTA3MjUtNDE5MS05MDI0LTBkMjVhOGE1OTQ0OS5wbmciLCJ3aWR0aCI6Ijw9MTQwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lot1Nz7EGm6ERVYRZAEhTCtWE1soTcSrRV-Vny8LYYA" alt="Creature 2">
+                    </div>
+                    <div class="text-box">
+                        <h3>Creature Title 2</h3>
+                        <p>Description for Creature 2. This creature has unique traits that make it special.</p>
+                    </div>
+                </div>
+        
+                <div class="item">
+                    <div class="image-box">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djdr4xr-0844ef3f-0725-4191-9024-0d25a8a59449.png/v1/fill/w_140,h_125,q_80,strp/caelestis_by_koku_draws_djdr4xr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI1IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamRyNHhyLTA4NDRlZjNmLTA3MjUtNDE5MS05MDI0LTBkMjVhOGE1OTQ0OS5wbmciLCJ3aWR0aCI6Ijw9MTQwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lot1Nz7EGm6ERVYRZAEhTCtWE1soTcSrRV-Vny8LYYA" alt="Creature 3">
+                    </div>
+                    <div class="text-box">
+                        <h3>Caelestis</h3>
+                        <p>Description for Creature 3. Here you can explore its origins and characteristics.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="extras" class="content" style="display: none;"> <h2>Extras</h2> <p>Additional content and secrets.</p> </section>
     </main>    
 
