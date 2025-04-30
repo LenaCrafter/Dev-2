@@ -7,25 +7,50 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="banner">
-            <h1>Midoza</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#" onclick="showPage('home')">Homepage</a></li>
-                <li><a href="#" onclick="showPage('map')">World Map</a></li>
-                <li><a href="#" onclick="showPage('creatures')">Creatures & Artifacts</a></li>
-                <li><a href="#" onclick="showPage('extras')">Extras</a></li>
-            </ul>
-        </nav>
-    </header>
-    
+    <div class="top-banner"></div>
+    <div class="map-banner"></div>
+    <div class="creatures-banner"></div>
+    <div class="extras-banner"></div>
     <main>
-        <section id="home" class="content"> <h2>Welcome to Midoza</h2> <p>Explore the wonders of this realm.</p> </section>
-        
+        <div id="main-navbar" class="top-navbar">
+            <ul>
+              <li><a href="#" onclick="showPage('home')">Homepage</a></li>
+              <li><a href="#" onclick="showPage('map')">World Map</a></li>
+              <li><a href="#" onclick="showPage('creatures')">Creatures & Artifacts</a></li>
+              <li><a href="#" onclick="showPage('extras')">Extras</a></li>
+            </ul>
+          </div>
+       
+        <section class="home">
+            <nav class="image-nav">
+                <h1>Midoza</h1>
+                <ul>
+                    <li class="nav-home">
+                        <a href="#" onclick="showPage('home')">
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djenwqx-d071123c-d3a6-4d85-9d55-9d5d8178384e.png/v1/fill/w_215,h_218,q_80,strp/shadow_kirb_by_koku_draws_djenwqx-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjE4IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamVud3F4LWQwNzExMjNjLWQzYTYtNGQ4NS05ZDU1LTlkNWQ4MTc4Mzg0ZS5wbmciLCJ3aWR0aCI6Ijw9MjE1In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Yvq1vTw3HVTEwceK8uAFA4lX65Bko5FTbKQEhpqNQCI" alt="Homepage">
+                        </a>
+                    </li>
+                    <li class="nav-map">
+                        <a href="#" onclick="showPage('map')">
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djnx4uv-6d6b120f-6ddb-4224-a6b5-f64e02805752.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FhOWEwMzA1LTAwOTYtNDViZC05MGIyLWE3YTk2MjYxNDE5YVwvZGpueDR1di02ZDZiMTIwZi02ZGRiLTQyMjQtYTZiNS1mNjRlMDI4MDU3NTIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.IFtjMU81mIRqWoKbeK3pkxIx6xlnqMRljU_-7atmIuQ" alt="World Map">
+                        </a>
+                    </li>
+                    <li class="nav-creatures">
+                        <a href="#" onclick="showPage('creatures')">
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djnuwwg-3a630311-4aa9-4439-b9f6-29b2acbd03e3.png/v1/fit/w_604,h_600,q_70,strp/caelestis_by_koku_draws_djnuwwg-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kam51d3dnLTNhNjMwMzExLTRhYTktNDQzOS1iOWY2LTI5YjJhY2JkMDNlMy5wbmciLCJ3aWR0aCI6Ijw9NjA0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.qfPzRpfVdTzYapb39DX6gbcuLjJ759-L_f2AEvK0BW8" alt="Creatures & Artifacts">
+                        </a>
+                    </li>
+                    <li class="nav-extras">
+                        <a href="#" onclick="showPage('extras')">
+                            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djnuwwg-3a630311-4aa9-4439-b9f6-29b2acbd03e3.png/v1/fit/w_604,h_600,q_70,strp/caelestis_by_koku_draws_djnuwwg-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kam51d3dnLTNhNjMwMzExLTRhYTktNDQzOS1iOWY2LTI5YjJhY2JkMDNlMy5wbmciLCJ3aWR0aCI6Ijw9NjA0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.qfPzRpfVdTzYapb39DX6gbcuLjJ759-L_f2AEvK0BW8" alt="Extras">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+
         <section id="map" class="content" style="display: none;"> <h2>World Map</h2> <p>Discover the lands.</p> 
-            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djhf2j8-6d7ff645-401f-4b40-9f00-7988aeb430ac.jpg/v1/fit/w_736,h_520,q_70,strp/midoza_map_by_koku_draws_djhf2j8-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTIwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamhmMmo4LTZkN2ZmNjQ1LTQwMWYtNGI0MC05ZjAwLTc5ODhhZWI0MzBhYy5qcGciLCJ3aWR0aCI6Ijw9NzM2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.uqHawof4Y5f-RnmkVsebOSe86OSmkkmv-n4zB1KxgIo" alt="World Map" class="world-map">
+            <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djnx4uv-6d6b120f-6ddb-4224-a6b5-f64e02805752.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FhOWEwMzA1LTAwOTYtNDViZC05MGIyLWE3YTk2MjYxNDE5YVwvZGpueDR1di02ZDZiMTIwZi02ZGRiLTQyMjQtYTZiNS1mNjRlMDI4MDU3NTIucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.IFtjMU81mIRqWoKbeK3pkxIx6xlnqMRljU_-7atmIuQ" alt="World Map" class="world-map">
           
             <div class="marker-container" style="left: 550px; top: -460px;">
                 <div class="marker"></div>
@@ -90,7 +115,7 @@
                     <p>Another town the tribe lives in, however the main family does not live here.</p>
                 </div>
             </div>
-</section>
+        </section>
         <section id="creatures" class="content" style="display: none;"> 
             <h2>Artifacts</h2>
             <hr class="divider">
@@ -130,11 +155,11 @@
             <div class="creature-container">
                 <div class="item">
                     <div class="image-box">
-                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djdr4xr-0844ef3f-0725-4191-9024-0d25a8a59449.png/v1/fill/w_140,h_125,q_80,strp/caelestis_by_koku_draws_djdr4xr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI1IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamRyNHhyLTA4NDRlZjNmLTA3MjUtNDE5MS05MDI0LTBkMjVhOGE1OTQ0OS5wbmciLCJ3aWR0aCI6Ijw9MTQwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lot1Nz7EGm6ERVYRZAEhTCtWE1soTcSrRV-Vny8LYYA" alt="Creature 1">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djnuwwg-3a630311-4aa9-4439-b9f6-29b2acbd03e3.png/v1/fit/w_604,h_600,q_70,strp/caelestis_by_koku_draws_djnuwwg-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kam51d3dnLTNhNjMwMzExLTRhYTktNDQzOS1iOWY2LTI5YjJhY2JkMDNlMy5wbmciLCJ3aWR0aCI6Ijw9NjA0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.qfPzRpfVdTzYapb39DX6gbcuLjJ759-L_f2AEvK0BW8" alt="Creature 1">
                     </div>
                     <div class="text-box">
                         <h3>Caelestis</h3>
-                        <p>Description for Creature 1. This is a paragraph that explains the creature's nature, powers, or backstory.</p>
+                        <p>Caelestis is a deity of wind that originally founded and protected the Gale Tribe along with his adopted son who became the chief of the Tribe, Roseate. Caelestis has </p>
                     </div>
                 </div>
         
@@ -165,10 +190,23 @@
 
     <script>
         function showPage(pageId) {
-            let sections = document.querySelectorAll('.content');
-            sections.forEach(section => section.style.display = 'none');
-            document.getElementById(pageId).style.display = 'block';
+          const sections = document.querySelectorAll('.content');
+          sections.forEach(section => section.style.display = 'none');
+          const page = document.getElementById(pageId);
+          if (page) page.style.display = 'block';
+    
+          // Toggle homepage class
+          if (pageId === 'home') {
+            document.body.classList.add('homepage');
+          } else {
+            document.body.classList.remove('homepage');
+          }
         }
-    </script>
+    
+        // Show homepage by default on load
+        document.addEventListener('DOMContentLoaded', () => {
+          showPage('home');
+        });
+      </script>
 </body>
 </html>

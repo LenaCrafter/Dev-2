@@ -1,28 +1,63 @@
 body {
     margin: 0;
     font-family:Verdana, sans-serif;
-    
+    color: aliceblue;
     background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djj50ks-749cc602-4089-429c-a575-e589d0877f33.png/v1/fill/w_1221,h_654,q_70,strp/test_background_by_koku_draws_djj50ks-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Njg2IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamo1MGtzLTc0OWNjNjAyLTQwODktNDI5Yy1hNTc1LWU1ODlkMDg3N2YzMy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.aqOo5GbpJGL1H7Nbf55OH3I826RFeKjDnKJvTeGj4P8');
     background-size: cover;      /* Makes the image fill the screen */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat;/* Stops it from repeating */
     text-align: center;
-    color: white;
+}
+.top-navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 1000;
+  padding: 10px;
 }
 
-.banner {
-    background: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djfr1qb-0c1a1ce6-92e7-48fc-8a82-3622c74676a8.jpg/v1/fit/w_736,h_189,q_70,strp/template_background_by_koku_draws_djfr1qb-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTg5IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamZyMXFiLTBjMWExY2U2LTkyZTctNDhmYy04YTgyLTM2MjJjNzQ2NzZhOC5qcGciLCJ3aWR0aCI6Ijw9NzM2In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.hhZGUZxBHsISnTQ9Mt7XSfuxkE-m9qkRhU0m3ktW178') no-repeat center center/cover;
-    height: 300px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(41, 45, 54, 0.7);
+.top-navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 
+.top-navbar a {
+  color: white;
+  text-decoration: none;
+}
+.homepage .image-nav img {
+  width: 100px; /* Adjust as needed */
+  transform: translate(0, 0); /* Start position */
+  position: absolute;
+}
+
+/* Example positioning */
+.nav-home img {
+  left: 20px;
+  top: 150px;
+}
+/* Set the background image for the homepage section */
+.homepage {
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djnx7kg-48b50294-1493-48d5-a95f-9f2e6392df0e.png/v1/fill/w_1078,h_742,q_70,strp/image_by_koku_draws_djnx7kg-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODgxIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kam54N2tnLTQ4YjUwMjk0LTE0OTMtNDhkNS1hOTVmLTlmMmU2MzkyZGYwZS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.uyQgC-UdJo-s9uRgrREpniw4nvbNLQABIrf1_gqRYFE');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Ensures it takes up the full screen height */
+  width: 100%;
+}
+.top-banner {
+  width: 100%;
+  height: 60px; /* Ensure there's a height */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 10; /* Ensure it is above other elements */
+}
 h1 {
   font-size: 6rem; /* Larger size */
-  background: linear-gradient(to right, #9bc1e6, #6a8ab1, #595fa3); /* Gradient background */
+  background: linear-gradient(to right, #168959, #197695, #30b4c1); /* Gradient background */
   color: white;
   padding: 20px 80px;
   border-radius: 15px;
@@ -34,15 +69,10 @@ h1 {
   transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 h1:hover {
-  background: linear-gradient(to right,#595fa3, #6a8ab1, #9bc1e6); /* Reversed gradient on hover */
+  background: linear-gradient(to right,#30b4c1, #197695, #168959); /* Reversed gradient on hover */
   transform: scale(1.05); /* Slight scaling effect */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
   cursor: pointer; /* Change cursor to pointer */
-}
-
-nav {
-    background: #6678ac;
-    padding: 10px;
 }
 
 nav ul {
@@ -63,6 +93,72 @@ nav ul li a {
     font-size: 1.2rem;
     padding: 10px 15px;
 }
+.image-nav {
+  position: relative; /* This is the anchor for absolute children */
+  width: 100%;
+  height: 100vh; /* Full screen height */
+}
+
+.image-nav ul {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Make each image positionable */
+.image-nav li {
+  position: absolute;
+}
+
+/* Customize each one */
+.nav-home {
+  top: 10%;
+  left: 15%;
+}
+
+.nav-map {
+  top: 30%;
+  left: 60%;
+}
+
+.nav-creatures {
+  top: 55%;
+  left: 25%;
+}
+
+.nav-extras {
+  top: 75%;
+  left: 70%;
+}
+
+/* Optional styling */
+.image-nav img {
+  width: 100px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-nav img:hover {
+  transform: scale(1.1);
+}
+body.homepage #main-navbar {
+  display: none; /* Hide navbar on homepage */
+}
+/* Hide both navs by default */
+.image-nav, #main-navbar {
+  display: none;
+}
+
+/* Show image nav only on homepage */
+body.homepage .image-nav {
+  display: block;
+}
+
+/* Show main nav only on other pages */
+body:not(.homepage) #main-navbar {
+  display: block;
+}
 #world-map-section {
     width: 80%;
     height: 80%;
@@ -76,8 +172,8 @@ nav ul li a {
   }
   
   .world-map {
-    width: 60%;  /* Make the map fit the container size */
-    height: 60%; /* Make the map fit the container size */
+    width: 70%;  /* Make the map fit the container size */
+    height: 70%; /* Make the map fit the container size */
     object-fit: contain; /* Ensure the map scales proportionally without stretching */
   }
   
@@ -116,13 +212,14 @@ nav ul li a {
 .marker-container:hover .info-box {
   visibility: visible;
   opacity: 1;
+  z-index: 150%;
 }
 #creatures {
   padding: 20px;
 }
 
 h2 {
-  background-color: rgba(78, 85, 144, 0.5);
+  background-color:  #197695;
   font-size: 40px; /* Adjust to your desired size */
   border-radius: 20px;
   padding: 30px;
