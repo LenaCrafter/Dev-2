@@ -1,8 +1,8 @@
 body {
     margin: 0;
     font-family:Verdana, sans-serif;
-    color: aliceblue;
-    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djj50ks-749cc602-4089-429c-a575-e589d0877f33.png/v1/fill/w_1221,h_654,q_70,strp/test_background_by_koku_draws_djj50ks-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Njg2IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamo1MGtzLTc0OWNjNjAyLTQwODktNDI5Yy1hNTc1LWU1ODlkMDg3N2YzMy5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.aqOo5GbpJGL1H7Nbf55OH3I826RFeKjDnKJvTeGj4P8');
+    color: rgb(255, 255, 255);
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djpdg8g-be0f6afa-ef94-43f8-8846-73785642232d.png/v1/fill/w_1280,h_984/imagebackground3_blurred_by_koku_draws_djpdg8g-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTg0IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kanBkZzhnLWJlMGY2YWZhLWVmOTQtNDNmOC04ODQ2LTczNzg1NjQyMjMyZC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.9uIyc82_htREou52GEQ1syqgnMi58mgpIqm1axSS6Uk');
     background-size: cover;      /* Makes the image fill the screen */
     background-position: center; /* Centers the image */
     background-repeat: no-repeat;/* Stops it from repeating */
@@ -27,24 +27,13 @@ body {
   color: white;
   text-decoration: none;
 }
-.homepage .image-nav img {
-  width: 100px; /* Adjust as needed */
-  transform: translate(0, 0); /* Start position */
-  position: absolute;
-}
-
-/* Example positioning */
-.nav-home img {
-  left: 20px;
-  top: 150px;
-}
 /* Set the background image for the homepage section */
 .homepage {
-  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djnx7kg-48b50294-1493-48d5-a95f-9f2e6392df0e.png/v1/fill/w_1078,h_742,q_70,strp/image_by_koku_draws_djnx7kg-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODgxIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kam54N2tnLTQ4YjUwMjk0LTE0OTMtNDhkNS1hOTVmLTlmMmU2MzkyZGYwZS5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.uyQgC-UdJo-s9uRgrREpniw4nvbNLQABIrf1_gqRYFE');
-  background-size: cover;
+  background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djpdf83-ebd97e89-453b-4d3b-a679-bd24fbd24b0d.png/v1/fill/w_1280,h_984/imagebackground3_by_koku_draws_djpdf83-fullview.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9OTg0IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kanBkZjgzLWViZDk3ZTg5LTQ1M2ItNGQzYi1hNjc5LWJkMjRmYmQyNGIwZC5wbmciLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.nzk0mZfcpcMIfwfBof1InN6C4SC6T-8zdOGi-kxD8xM');
+  background-size: 100% 170%;
   background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh; /* Ensures it takes up the full screen height */
+  background-repeat:no-repeat;
+  height: 1h; /* Ensures it takes up the full screen height */
   width: 100%;
 }
 .top-banner {
@@ -56,42 +45,25 @@ body {
   z-index: 10; /* Ensure it is above other elements */
 }
 h1 {
-  font-size: 6rem; /* Larger size */
-  background: linear-gradient(to right, #168959, #197695, #30b4c1); /* Gradient background */
+  font-size: 6rem;
+  background: linear-gradient(to right, #168959, #197695, #30b4c1);
   color: white;
-  padding: 20px 80px;
-  border-radius: 15px;
+  padding: 10px 60px;
+  border-radius: 10px;
   text-align: center;
   text-transform: uppercase;
-  letter-spacing: 5px; /* Adds some spacing between letters */
+  letter-spacing: 5px;
   font-weight: bold;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow behind */
-  transition: all 0.3s ease; /* Smooth transition for hover effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+  margin-top: 0; /* Makes sure it hugs the top */
 }
+
 h1:hover {
-  background: linear-gradient(to right,#30b4c1, #197695, #168959); /* Reversed gradient on hover */
-  transform: scale(1.05); /* Slight scaling effect */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
-  cursor: pointer; /* Change cursor to pointer */
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    padding: 10px 15px;
+  background: linear-gradient(to right, #30b4c1, #197695, #168959);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
 .image-nav {
   position: relative; /* This is the anchor for absolute children */
@@ -100,7 +72,7 @@ nav ul li a {
 }
 
 .image-nav ul {
-  position: relative;
+  position: absolute;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -113,31 +85,56 @@ nav ul li a {
 
 /* Customize each one */
 .nav-home {
-  top: 10%;
-  left: 15%;
+  top: 20px;
+  left: 70px;
+  width: 200%;
 }
 
 .nav-map {
-  top: 30%;
-  left: 60%;
+  top: 90px;
+  left: 390px;
+
 }
 
 .nav-creatures {
-  top: 55%;
-  left: 25%;
+  top: -10px;
+  left: 850px;
+  
 }
 
 .nav-extras {
-  top: 75%;
-  left: 70%;
-}
+  top: 220px;
+  left: 400px;
 
-/* Optional styling */
-.image-nav img {
-  width: 100px;
-  height: auto;
-  transition: transform 0.3s ease;
 }
+.nav-extras img {
+  width: 460px;
+  height: 410px;
+  object-fit: contain; /* Crops images to fill box */
+  transition: transform 0.3s ease;
+  border-radius: 10px; /* Optional for style */
+}
+.nav-creatures img {
+  width: 420px;
+  height: 420px;
+  object-fit: contain; /* Crops images to fill box */
+  transition: transform 0.3s ease;
+  border-radius: 10px; /* Optional for style */
+}
+.nav-map img {
+    width: 260px;
+    height: 260px;
+    object-fit: contain; /* Crops images to fill box */
+    transition: transform 0.3s ease;
+    border-radius: 10px; /* Optional for style */
+  }
+.nav-home img {
+      width: 290px;
+      height: 290px;
+      object-fit: contain; /* Crops images to fill box */
+      transition: transform 0.3s ease;
+      border-radius: 10px; /* Optional for style */
+    }
 
 .image-nav img:hover {
   transform: scale(1.1);
@@ -301,4 +298,45 @@ hr.divider {
     .artifact-container, .creature-container {
         justify-content: center;
     }
+}
+#falling-leaves-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none; /* So it doesn’t block anything else */
+}
+
+/* Leaf image styles */
+.falling-leaf {
+  position: absolute;
+  width: 20px; /* Small size for leaves */
+  height: auto;
+  opacity: 0.8;
+  animation: fall 6s linear infinite, spin 4s linear infinite;
+}
+
+/* Falling animation */
+@keyframes fall {
+  0% {
+    top: -20px; /* Start above the screen */
+    left: calc(100% * var(--rand-x)); /* Random starting position */
+    opacity: 0.8;
+  }
+  100% {
+    top: 100vh; /* End at the bottom */
+    left: calc(100% * var(--rand-x-end)); /* Random horizontal ending */
+    opacity: 0;
+  }
+}
+
+/* Spin animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }

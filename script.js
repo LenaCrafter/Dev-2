@@ -1,84 +1,36 @@
-// Select all markers and info boxes
-const markers = document.querySelectorAll('.marker');
-const infoBoxes = document.querySelectorAll('.info-box');
-
-// Loop through each marker and add event listeners
-markers.forEach((marker, index) => {
-  const infoBox = infoBoxes[index];  // Get the corresponding info-box
-
-  marker.addEventListener('mouseover', () => {
-    infoBox.style.display = 'block';
-  });
-
-  marker.addEventListener('mousemove', (e) => {
-    // Update the position of the info box based on the mouse position
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-
-    // Adjust the info box position slightly to the right and below the cursor
-    infoBox.style.left = mouseX + 10 + 'px';
-    infoBox.style.top = mouseY + 10 + 'px';
-  });
-
-  marker.addEventListener('mouseout', () => {
-    infoBox.style.display = 'none';
-  });
-});
-// Function to show a page and hide the others
-function showPage(pageId) {
-  // Hide all sections
-  let sections = document.querySelectorAll('.content');
-  sections.forEach(section => section.style.display = 'none');
-  
-  // Show the selected page
-  document.getElementById(pageId).style.display = 'block';
-
-  // Add the 'homepage' class if we're on the homepage
-  if (pageId === 'home') {
-      document.body.classList.add('homepage');
-  } else {
-      document.body.classList.remove('homepage');
-  }
-}
-
-// Make sure the homepage shows by default on page load
-document.addEventListener('DOMContentLoaded', () => {
-  showPage('home');
-});
-function showPage(pageId) {
-  // Hide all content sections
-  const sections = document.querySelectorAll('.content');
-  sections.forEach(section => section.style.display = 'none');
-
-  // Show the selected section
-  const activeSection = document.getElementById(pageId);
-  if (activeSection) activeSection.style.display = 'block';
-
-  // Toggle body class based on current page
-  if (pageId === 'home') {
-      document.body.classList.add('homepage');
-  } else {
-      document.body.classList.remove('homepage');
-  }
-}
-
-// Make sure the homepage shows up on initial load
-document.addEventListener('DOMContentLoaded', () => {
-  showPage('home');
-});
-function showPage(pageId) {
-  let sections = document.querySelectorAll('.content');
-  sections.forEach(section => section.style.display = 'none');
-  document.getElementById(pageId).style.display = 'block';
-}
 function showPage(pageId) {
   const sections = document.querySelectorAll('.content');
-  sections.forEach(section => section.classList.remove('active'));
+  sections.forEach(section => section.style.display = 'none');
+  const page = document.getElementById(pageId);
+  if (page) page.style.display = 'block';
 
-  const activeSection = document.getElementById(pageId);
-  if (activeSection) {
-    activeSection.classList.add('active');
+  // Toggle homepage class
+  if (pageId === 'home') {
+    document.body.classList.add('homepage');
+  } else {
+    document.body.classList.remove('homepage');
   }
 }
+// Function to create a leaf
+function createLeaf() {
+  const leaf = document.createElement("img");
+  leaf.src = "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djpd8op-d1edd809-6e9c-4ff9-8a4e-12ce53b742c1.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FhOWEwMzA1LTAwOTYtNDViZC05MGIyLWE3YTk2MjYxNDE5YVwvZGpwZDhvcC1kMWVkZDgwOS02ZTljLTRmZjktOGE0ZS0xMmNlNTNiNzQyYzEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.05eGb6s2TkbQk-TXFkBq5fwiswYDuBMYIQUh211IJGk"; // Replace with your image URL
+  leaf.className = "falling-leaf";
 
-window.onload = () => showPage('home');
+  // Set random starting and ending positions for each leaf
+  const randX = Math.random();
+  const randXEnd = Math.random();
+
+  // Add the custom properties for CSS
+  leaf.style.setProperty('--rand-x', randX);
+  leaf.style.setProperty('--rand-x-end', randXEnd);
+
+  // Append the leaf to the container
+  document.getElementById("falling-leaves-container").appendChild(leaf);
+
+  // Remove the leaf after animation
+  setTimeout(() => leaf.remove(), 6000); // Matches the duration of the animation
+}
+
+// Create a leaf every 500 milliseconds
+setInterval(createLeaf, 500);
