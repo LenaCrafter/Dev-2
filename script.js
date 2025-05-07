@@ -11,6 +11,9 @@ function showPage(pageId) {
     document.body.classList.remove('homepage');
   }
 }
+window.onload = function() {
+  showPage('home'); // Show only the homepage on first load
+};
 // Function to create a leaf
 function createLeaf() {
   const leaf = document.createElement("img");

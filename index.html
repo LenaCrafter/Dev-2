@@ -7,20 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="top-banner"></div>
-    <div class="map-banner"></div>
-    <div class="creatures-banner"></div>
-    <div class="extras-banner"></div>
     <main>
-        <div id="main-navbar" class="top-navbar">
-            <ul>
-              <li><a href="#" onclick="showPage('home')">Homepage</a></li>
-              <li><a href="#" onclick="showPage('map')">World Map</a></li>
-              <li><a href="#" onclick="showPage('creatures')">Creatures & Artifacts</a></li>
-              <li><a href="#" onclick="showPage('extras')">Extras</a></li>
-            </ul>
-          </div>
-       
         <section class="home">
             <nav class="image-nav">
                 <h1>Midoza</h1>
@@ -47,6 +34,16 @@
                     </li>
                 </ul>
             </nav>
+        </section>
+        <section>
+        <div id="main-navbar" class="top-navbar">
+            <ul>
+              <li><a href="#" onclick="showPage('home')">Homepage</a></li>
+              <li><a href="#" onclick="showPage('map')">World Map</a></li>
+              <li><a href="#" onclick="showPage('creatures')">Creatures & Artifacts</a></li>
+              <li><a href="#" onclick="showPage('extras')">Extras</a></li>
+            </ul>
+          </div>
         </section>
 
         <section id="map" class="content" style="display: none;"> <h2>World Map</h2> <p>Discover the lands.</p> 
@@ -122,31 +119,45 @@
             <div class="artifact-container">
                 <div class="item">
                     <div class="image-box">
-                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djdr4xr-0844ef3f-0725-4191-9024-0d25a8a59449.png/v1/fill/w_140,h_125,q_80,strp/caelestis_by_koku_draws_djdr4xr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI1IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamRyNHhyLTA4NDRlZjNmLTA3MjUtNDE5MS05MDI0LTBkMjVhOGE1OTQ0OS5wbmciLCJ3aWR0aCI6Ijw9MTQwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lot1Nz7EGm6ERVYRZAEhTCtWE1soTcSrRV-Vny8LYYA" alt="Artifact 1">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djpjged-d7a7885a-bc4f-4fdc-98ac-469237677fcb.png/v1/fill/w_227,h_217,q_80,strp/blue_rose_by_koku_draws_djpjged-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjE3IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kanBqZ2VkLWQ3YTc4ODVhLWJjNGYtNGZkYy05OGFjLTQ2OTIzNzY3N2ZjYi5wbmciLCJ3aWR0aCI6Ijw9MjI3In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.91SkiAnd6jobexPpF8o-K2YZc0N99ZS7NOHEmHFoljA" alt="Artifact 1">
                     </div>
                     <div class="text-box">
                         <h3>The Blue Rose Sword</h3>
-                        <p>Description for Artifact 1. This is a paragraph that explains the significance and details about the artifact.</p>
+                        <p>The Blue Rose is a legendary sword steeped in sorrow and myth. Crafted from rare azure steel and adorned with a delicate blue rose-shaped hilt, it once belonged to Roseate, the co-founder of the Gale Tribe. Revered as a symbol of beauty and sorrow, the blade is remembered not only for its elegance—but for the tragedy it carries.<br><br>
+
+                            It was with this very sword that Roseate took his own life, and from that moment forward, The Blue Rose was said to be cursed. Every wielder since has met a grim fate, fueling the belief that the sword is destined to bring death to those who claim it. <br><br>
+                            
+                            But its curse goes deeper than death. The blade possesses a strange enchantment—it will only cut if the wielder holds the true will to hurt. In the hands of one with hesitation, it feels dull, like plastic. In the grip of one resolute in violence, it becomes lethally sharp. This unpredictable nature has made it both feared and misunderstood within the Gale Tribe.<br><br>
+                            
+                            Generations later, the sword reemerges in the hands of Kabyi, a young warrior who rises to become the new leader of the Gale Tribe. Mysteriously, Kabyi bears an uncanny resemblance to Roseate, sparking whispers among the tribe that he may be Roseate reborn. Whether coincidence or destiny, Kabyi’s possession of The Blue Rose has revived ancient legends—and left the tribe wondering whether the cycle of sorrow is about to repeat… or finally end.</p>
                     </div>
                 </div>
         
                 <div class="item">
                     <div class="image-box">
-                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djdr4xr-0844ef3f-0725-4191-9024-0d25a8a59449.png/v1/fill/w_140,h_125,q_80,strp/caelestis_by_koku_draws_djdr4xr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI1IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamRyNHhyLTA4NDRlZjNmLTA3MjUtNDE5MS05MDI0LTBkMjVhOGE1OTQ0OS5wbmciLCJ3aWR0aCI6Ijw9MTQwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lot1Nz7EGm6ERVYRZAEhTCtWE1soTcSrRV-Vny8LYYA" alt="Artifact 2">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djpjget-4d3f95da-91b3-47ff-800e-67248498438a.png/v1/fill/w_251,h_227,q_80,strp/rose_by_koku_draws_djpjget-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjI3IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kanBqZ2V0LTRkM2Y5NWRhLTkxYjMtNDdmZi04MDBlLTY3MjQ4NDk4NDM4YS5wbmciLCJ3aWR0aCI6Ijw9MjUxIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.rKQ3dWxypFZymWdWrRsQTG-s4ONZyLJKQTP7ZkGLbYA" alt="Artifact 2">
                     </div>
                     <div class="text-box">
                         <h3>One of Roseate's Roses</h3>
-                        <p>Description for Artifact 2. Another interesting artifact with its story.</p>
+                        <p>Perhaps the most delicate relic of the Gale Tribe, Roseate’s Rose is a rare blue blossom, once worn daily by Roseate himself. Known for his calm presence and deep empathy, Roseate cultivated an entire garden of these unique roses—each petal said to carry a hint of his aura. The roses shimmer faintly under moonlight, and their fragrance is often described as serene, even nostalgic.<br><br>
+
+                            Unlike ordinary flowers, these roses do not wilt easily, yet they remain incredibly fragile—much like the spirit of the tribe itself. After Roseate’s death, the garden was sealed, and only a handful of blooms have ever been retrieved. Each is treated as a sacred token, often used in quiet ceremonies or preserved within glass pendants.<br><br>
+                            
+                            To the Gale Tribe, possessing a Roseate’s Rose is not just a symbol of leadership or honor—it is a reminder of tenderness, vulnerability, and the quiet strength their founder embodied.</p>
                     </div>
                 </div>
         
                 <div class="item">
                     <div class="image-box">
-                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djdr4xr-0844ef3f-0725-4191-9024-0d25a8a59449.png/v1/fill/w_140,h_125,q_80,strp/caelestis_by_koku_draws_djdr4xr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI1IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamRyNHhyLTA4NDRlZjNmLTA3MjUtNDE5MS05MDI0LTBkMjVhOGE1OTQ0OS5wbmciLCJ3aWR0aCI6Ijw9MTQwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lot1Nz7EGm6ERVYRZAEhTCtWE1soTcSrRV-Vny8LYYA" alt="Artifact 3">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djpjge6-9917f9de-418f-4da5-835c-37d452593a2a.png/v1/fill/w_181,h_165,q_80,strp/ncklace_by_koku_draws_djpjge6-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTY1IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kanBqZ2U2LTk5MTdmOWRlLTQxOGYtNGRhNS04MzVjLTM3ZDQ1MjU5M2EyYS5wbmciLCJ3aWR0aCI6Ijw9MTgxIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.Zbcy6DB1j6YIiOHTSWWmVi2sgJanrIDOap6t92ji9zI" alt="Artifact 3">
                     </div>
                     <div class="text-box">
                         <h3>Ayumi's Necklace</h3>
-                        <p>Description for Artifact 3. Another cool artifact and its significance.</p>
+                        <p>A treasured heirloom of the Gale Tribe, Ayumi’s Necklace once belonged to Azure, the beloved wife of Roseate and co-founder of the tribe. Azure was known for her wisdom and kindness, guiding the tribe alongside Roseate during its earliest and most uncertain days. The necklace, a delicate piece imbued with sky-blue stones, was said to carry not only her grace but a trace of her spirit—offering protection and clarity to those who bore it.<br><br>
+
+                            After Roseate’s untimely death, Azure was consumed by grief. Unable to bear the loss, she chose to end her life in solitude. The necklace, found beside her, became a powerful symbol of both love and sorrow. Since then, it has been passed down to the wife of each new tribe leader, not only as a symbol of legacy but as a reminder of the burdens and strength required to guide the tribe.<br><br>
+                            
+                            Some say the necklace whispers in moments of deep doubt—fragments of Azure’s voice, urging courage and compassion..</p>
                     </div>
                 </div>
             </div>
@@ -159,33 +170,110 @@
                     </div>
                     <div class="text-box">
                         <h3>Caelestis</h3>
-                        <p>Caelestis is a deity of wind that originally founded and protected the Gale Tribe along with his adopted son who became the chief of the Tribe, Roseate. Caelestis has </p>
+                        <p>Long ago, the skies whispered of a being not born of earth or flesh—Caelestis, a celestial creature said to be woven from stardust and wind. Descending from the upper aether, he found the scattered nomads of the highlands and brought them together, founding what would become the Gale Tribe. Among them was a lost human boy, Roseate, whom Caelestis raised as his own. Roseate’s gentle wisdom and Caelestis’s divine presence shaped the tribe into a culture of harmony, sky-worship, and innovation.<br><br>
+
+                            Together, they ruled for generations. While Caelestis brought vision, Roseate brought grounding, compassion, and clever diplomacy with the neighboring lands. But when Roseate passed—some say too young, others say just in time—a silence fell over Caelestis. In his grief, he turned to a rare crystalline substance known as moonga, used ritually by the tribe to commune with the sky. Yet the moonga was unstable—corrupted. It possessed Caelestis slowly, clouding his mind and warping his form.<br><br>
+                            
+                            Fearing himself, Caelestis withdrew to the upper reaches of the mountains, where the clouds rarely part. Though the tribe has not seen him in generations, many still believe he watches over them in silence. Some whisper that his return will signal either the tribe’s salvation—or its reckoning. </p>
                     </div>
                 </div>
         
                 <div class="item">
                     <div class="image-box">
-                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djdr4xr-0844ef3f-0725-4191-9024-0d25a8a59449.png/v1/fill/w_140,h_125,q_80,strp/caelestis_by_koku_draws_djdr4xr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI1IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamRyNHhyLTA4NDRlZjNmLTA3MjUtNDE5MS05MDI0LTBkMjVhOGE1OTQ0OS5wbmciLCJ3aWR0aCI6Ijw9MTQwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lot1Nz7EGm6ERVYRZAEhTCtWE1soTcSrRV-Vny8LYYA" alt="Creature 2">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djpcy1d-c5d454c7-7b02-4865-9c14-b126fe5a3130.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FhOWEwMzA1LTAwOTYtNDViZC05MGIyLWE3YTk2MjYxNDE5YVwvZGpwY3kxZC1jNWQ0NTRjNy03YjAyLTQ4NjUtOWMxNC1iMTI2ZmU1YTMxMzAucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.AJ5NKi1rWYB5mgNuXo-GweSwQ4Ooo5AKH8mNu2yDhAU" alt="Creature 2">
                     </div>
                     <div class="text-box">
-                        <h3>Creature Title 2</h3>
-                        <p>Description for Creature 2. This creature has unique traits that make it special.</p>
+                        <h3>Fox-Kin</h3>
+                        <p>The Fox-Kin are small, nimble, fox-like creatures native to Midoza, the lush homeland of the Gale Tribe. Known for their cleverness, bushy tails, and glowing eyes, they weave through the forests and windswept plains with ease, often seen only as fleeting shapes between the trees.<br><br>
+
+                            Ancient tales say the Fox-Kin were once the loyal children of Serafina, the revered fox deity of old. She was a gentle yet powerful spirit who guided them with wisdom and grace. But when Serafina passed on to the spirit realm, the kin were left without their guardian. Lost and scattered, they wandered across the lands—until they found peace again in Midoza.<br><br>
+                            
+                            There, under the watchful protection of Caelestis, the wind deity and founder of the Gale Tribe, the Fox-Kin found a new home. Though quiet and shy by nature, they are said to carry remnants of Serafina's magic—blessed with the ability to sense shifts in weather and emotion. The Gale Tribe views them as sacred companions, and their presence is often seen as a good omen.</p>
                     </div>
                 </div>
         
                 <div class="item">
                     <div class="image-box">
-                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djdr4xr-0844ef3f-0725-4191-9024-0d25a8a59449.png/v1/fill/w_140,h_125,q_80,strp/caelestis_by_koku_draws_djdr4xr-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MTI1IiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kamRyNHhyLTA4NDRlZjNmLTA3MjUtNDE5MS05MDI0LTBkMjVhOGE1OTQ0OS5wbmciLCJ3aWR0aCI6Ijw9MTQwIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.lot1Nz7EGm6ERVYRZAEhTCtWE1soTcSrRV-Vny8LYYA" alt="Creature 3">
+                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djpcy0y-2227cc02-2496-4f5e-8d54-91a6aef3dce4.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FhOWEwMzA1LTAwOTYtNDViZC05MGIyLWE3YTk2MjYxNDE5YVwvZGpwY3kweS0yMjI3Y2MwMi0yNDk2LTRmNWUtOGQ1NC05MWE2YWVmM2RjZTQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.bNWhIorftYFsPdwKT-DWRtp9ViZF-ccu6dqkZav-RhE" alt="Creature 3">
                     </div>
                     <div class="text-box">
-                        <h3>Caelestis</h3>
-                        <p>Description for Creature 3. Here you can explore its origins and characteristics.</p>
+                        <h3>Woobles</h3>
+                        <p>Woobles are round, fish-like creatures that inhabit the rivers, lakes, and coastal waters of Midoza. With smooth, slippery bodies and expressive, wide-set eyes, they’re often seen bobbing at the surface like playful bubbles. Known for their high-pitched giggles and love of games, Woobles are beloved for both their mischief and their charm. <br><br>
+
+                            Despite being aquatic, Woobles are highly social and frequently interact with travelers, especially those near the water’s edge. They're known to steal small trinkets, only to return them with a cheeky twist—often requiring the finder to engage in a silly challenge, riddle, or race. <br><br>
+                            
+                            One well-known tale among the Gale Tribe tells of a time when a particularly bold Wobble stole Kabyi’s knight mask, fluttering off with it in a trail of bubbles. Refusing to return it, the Wobble demanded Kabyi play a game of “mirror splash” first—an unpredictable water mimicry game of moves and laughs. Only after Kabyi conceded with a smile and joined in, did the Wobble return the mask, bowing dramatically as if it were a stage performance.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="extras" class="content" style="display: none;"> <h2>Extras</h2> <p>Additional content and secrets.</p> </section>
+        <section id="extras" class="content">
+            <h2>Extras (Tribe Leaders/Timeline)</h2>
+            
+            <div class="timeline-container">
+              <!-- Roseate -->
+              <div class="timeline-item">
+                <div class="timeline-img">
+                  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djnuwwg-3a630311-4aa9-4439-b9f6-29b2acbd03e3.png/v1/fit/w_604,h_600,q_70,strp/caelestis_by_koku_draws_djnuwwg-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kam51d3dnLTNhNjMwMzExLTRhYTktNDQzOS1iOWY2LTI5YjJhY2JkMDNlMy5wbmciLCJ3aWR0aCI6Ijw9NjA0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.qfPzRpfVdTzYapb39DX6gbcuLjJ759-L_f2AEvK0BW8" alt="Roseate">
+                </div>
+                <div class="timeline-content">
+                  <h2>Roseate</h2>
+                  <p><strong>Reign:</strong> Founder of the Gale Tribe</p>
+                  <p><strong>Key Event:</strong> Founded the Gale Tribe with Azure; wore the Blue Rose, which became cursed. He took his own life with the Blue Rose.</p>
+                </div>
+              </div>
+        
+              <!-- Rafa -->
+              <div class="timeline-item">
+                <div class="timeline-img">
+                  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djnuwwg-3a630311-4aa9-4439-b9f6-29b2acbd03e3.png/v1/fit/w_604,h_600,q_70,strp/caelestis_by_koku_draws_djnuwwg-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kam51d3dnLTNhNjMwMzExLTRhYTktNDQzOS1iOWY2LTI5YjJhY2JkMDNlMy5wbmciLCJ3aWR0aCI6Ijw9NjA0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.qfPzRpfVdTzYapb39DX6gbcuLjJ759-L_f2AEvK0BW8" alt="Rafa">
+                </div>
+                <div class="timeline-content">
+                  <h2>Rafa</h2>
+                  <p><strong>Reign:</strong> Successor of Roseate</p>
+                  <p><strong>Key Event:</strong> Rafa led the tribe through the early years of turmoil after Roseate’s passing. He struggled with maintaining unity after the loss of their leader.</p>
+                </div>
+              </div>
+        
+              <!-- Atlas -->
+              <div class="timeline-item">
+                <div class="timeline-img">
+                  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djnuwwg-3a630311-4aa9-4439-b9f6-29b2acbd03e3.png/v1/fit/w_604,h_600,q_70,strp/caelestis_by_koku_draws_djnuwwg-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kam51d3dnLTNhNjMwMzExLTRhYTktNDQzOS1iOWY2LTI5YjJhY2JkMDNlMy5wbmciLCJ3aWR0aCI6Ijw9NjA0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.qfPzRpfVdTzYapb39DX6gbcuLjJ759-L_f2AEvK0BW8" alt="Atlas">
+                </div>
+                <div class="timeline-content">
+                  <h2>Atlas</h2>
+                  <p><strong>Reign:</strong> While acting in Rafa’s stead, Atlas began the tribe’s rebuilding</p>
+                  <p><strong>Key Event:</strong> Although never an official leader, Atlas served on behalf of Rafa in his old age, bringing stability to the Gale Tribe by forging alliances with neighboring tribes and restoring the tribe’s influence.</p>
+                </div>
+              </div>
+        
+              <!-- Kabyi -->
+              <div class="timeline-item">
+                <div class="timeline-img">
+                  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djnuwwg-3a630311-4aa9-4439-b9f6-29b2acbd03e3.png/v1/fit/w_604,h_600,q_70,strp/caelestis_by_koku_draws_djnuwwg-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kam51d3dnLTNhNjMwMzExLTRhYTktNDQzOS1iOWY2LTI5YjJhY2JkMDNlMy5wbmciLCJ3aWR0aCI6Ijw9NjA0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.qfPzRpfVdTzYapb39DX6gbcuLjJ759-L_f2AEvK0BW8" alt="Kaybi">
+                </div>
+                <div class="timeline-content">
+                  <h2>Kabyi</h2>
+                  <p><strong>Reign:</strong> Leader of the Gale Tribe</p>
+                  <p><strong>Key Event:</strong> Kabyi is believed to be the reincarnation of Roseate. He found and wielded the Blue Rose, forever changing the tribe’s fate.</p>
+                </div>
+              </div>
+        
+              <!-- Aijaz -->
+              <div class="timeline-item">
+                <div class="timeline-img">
+                  <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/aa9a0305-0096-45bd-90b2-a7a96261419a/djnuwwg-3a630311-4aa9-4439-b9f6-29b2acbd03e3.png/v1/fit/w_604,h_600,q_70,strp/caelestis_by_koku_draws_djnuwwg-375w-2x.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjAwIiwicGF0aCI6IlwvZlwvYWE5YTAzMDUtMDA5Ni00NWJkLTkwYjItYTdhOTYyNjE0MTlhXC9kam51d3dnLTNhNjMwMzExLTRhYTktNDQzOS1iOWY2LTI5YjJhY2JkMDNlMy5wbmciLCJ3aWR0aCI6Ijw9NjA0In1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmltYWdlLm9wZXJhdGlvbnMiXX0.qfPzRpfVdTzYapb39DX6gbcuLjJ759-L_f2AEvK0BW8" alt="Aijaz">
+                </div>
+                <div class="timeline-content">
+                  <h2>Aijaz</h2>
+                  <p><strong>Reign:</strong> Current Leader</p>
+                  <p><strong>Key Event:</strong> Aijaz is considered the current leader of the Gale Tribe, bringing a period of peace and growth, leading the tribe toward prosperity.</p>
+                </div>
+              </div>
+        
+            </div>
+          </section>
         
         <iframe 
         width="0" 
@@ -199,6 +287,7 @@
     </main>   
 
     <script src="script.js"></script>
+    
 
 </body>
 </html>

@@ -8,6 +8,9 @@ body {
     background-repeat: no-repeat;/* Stops it from repeating */
     text-align: center;
 }
+h3 {
+color: rgb(22, 111, 144);
+}
 .top-navbar {
   position: fixed;
   top: 0;
@@ -186,6 +189,13 @@ body:not(.homepage) #main-navbar {
     border-radius: 50%;
     cursor: pointer;
 }
+.marker {
+  transition: transform 0.3s ease;
+}
+
+.marker:hover {
+  animation: bounce 0.6s ease;
+}
 
 .info-box {
   color: black;
@@ -222,7 +232,7 @@ h2 {
   padding: 30px;
   padding-left: 20px;
   max-width: 500px;
-  margin-top: 20px;
+  margin-top: 80px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -282,11 +292,13 @@ hr.divider {
 .text-box h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
+    text-align: left;
 }
 
 .text-box p {
     font-size: 1em;
     color: #555;
+    text-align: left;
 }
 
 /* Responsive Design */
@@ -340,3 +352,211 @@ hr.divider {
     transform: rotate(360deg);
   }
 }
+@media (max-width: 768px) {
+  .image-nav ul {
+    flex-direction: column; /* Stack the images vertically */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-nav li {
+    position: relative;
+    top: auto; /* Reset positions for stacking */
+    left: auto; /* Reset positions for stacking */
+    margin-bottom: 20px; /* Add space between images */
+  }
+
+
+  .nav-map img,
+  .nav-creatures img,
+  .nav-extras img {
+    width: 80%; /* Make the images smaller for mobile */
+  }
+}
+.image-box img {
+  width: 100%;
+  height: auto;
+  max-width: 100%; /* Ensures images don’t overflow their container */
+  border-radius: 8px;
+}
+.item {
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  min-width: 250px; /* Ensure it doesn’t get too small */
+  text-align: center;
+}
+.text-box h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.text-box p {
+  font-size: 1em;
+  color: #267391;
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+  .text-box h3 {
+    font-size: 1em; /* Smaller heading font size */
+  }
+
+  .text-box p {
+    font-size: 0.9em; /* Slightly smaller text for readability */
+  }
+}
+.falling-leaf {
+  width: 20px;
+  height: auto;
+  opacity: 0.8;
+  animation: fall 6s linear infinite, spin 4s linear infinite;
+}
+
+@media (max-width: 768px) {
+  .falling-leaf {
+    width: 15px; /* Smaller leaf size for mobile */
+  }
+}
+/* Mobile responsiveness for navigation bar */
+@media (max-width: 768px) {
+  .top-navbar ul {
+    flex-direction: column; /* Stack links vertically */
+    align-items: center; /* Center the links */
+  }
+
+  .top-navbar a {
+    font-size: 1.2em; /* Increase size for better tap targets */
+    padding: 10px;
+  }
+}
+/* Optional: Adjust for smaller screen sizes */
+@media (max-width: 768px) {
+  .homepage {
+    background-size: cover; /* Maintain full coverage */
+    background-position: top center; /* Adjust background positioning for mobile */
+    height: 300vh; /* Keep full viewport height */
+  }
+}
+@media (max-width: 768px) {
+  .nav-home img {
+    margin: 1;
+    display: block;
+    width: 80%; /* or whatever width looks good on mobile */
+  }
+}
+/* Styling for the extras section */
+#extras.content {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+#extras.content h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  color: #5d5d5d;
+}
+
+/* Timeline Items */
+.timeline-container {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.timeline-item .timeline-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.timeline-item .timeline-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.timeline-item .timeline-content {
+  max-width: 500px;
+}
+
+.timeline-item .timeline-content h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.timeline-item .timeline-content p {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+/* Vertical Line Styling */
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #29659e;
+  transform: translateX(-50%);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .timeline-item .timeline-img {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  .timeline-container::before {
+    left: 30px;
+  }
+}
+.image-box {
+  transition: transform 0.3s ease;
+}
+
+.image-box:hover {
+  animation: bounce 0.6s ease;
+}
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  30%  { transform: translateY(-8px); }
+  50%  { transform: translateY(0); }
+  70%  { transform: translateY(-4px); }
+  100% { transform: translateY(0); }
+  }
+  .timeline-img {
+    transition: transform 0.3s ease;
+  }
+  
+  .timeline-img:hover {
+    animation: bounce 0.6s ease;
+  }
+  
+  @keyframes bounce {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-8px); }
+    50%  { transform: translateY(0); }
+    70%  { transform: translateY(-4px); }
+    100% { transform: translateY(0); }
+  }
