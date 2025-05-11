@@ -37,3 +37,4 @@ function createLeaf() {
 
 // Create a leaf every 500 milliseconds
 setInterval(createLeaf, 500);
+
